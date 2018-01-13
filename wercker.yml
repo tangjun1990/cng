@@ -35,7 +35,7 @@ build:
         name: go build
         code: |
           go build
-    # Test the project  
+    # Test the project
     - script:
         name: go test
         code: |
@@ -53,4 +53,3 @@ deploy:
        port: "8080"
        tag: latest
        repository: tangjun1990/cng
-       registry: https://registry.hub.docker.com
