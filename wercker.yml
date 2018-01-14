@@ -44,12 +44,19 @@ build:
         name: copy files to wercker output
         code: |
           cp -R ./ ${WERCKER_OUTPUT_DIR}
+    - internal/docker-push:
+        username: $DOCKER_USERNAME
+        password: $DOCKER_PASSWORD
+        cmd: /bin/bash -c "cd /pipeline/source && find . -name 'main'"
+        port: "8080"
+        tag: latest.5
+        repository: tangjun1990/cng
 deploy:
  steps:
    - internal/docker-push:
        username: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
-       cmd: /bin/bash -c "cd /pipeline/source && ./src/main"
+       cmd: /bin/bash -c "cd /pipeline/source && find . -name 'main'"
        port: "8080"
-       tag: latest.4
+       tag: latest.5
        repository: tangjun1990/cng
