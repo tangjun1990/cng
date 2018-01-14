@@ -49,5 +49,5 @@ build:
         password: $DOCKER_PASSWORD
         cmd: /bin/bash -c "cd /pipeline/source && go run main.go"
         port: "8080"
-        tag: latest.9
+        tag: latest.10
         repository: tangjun1990/cng
