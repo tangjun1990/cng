@@ -47,9 +47,9 @@ build:
     - internal/docker-push:
         username: $DOCKER_USERNAME
         password: $DOCKER_PASSWORD
-        cmd: /bin/bash -c "cd /pipeline/source && ls"
+        cmd: /bin/bash -c "cd /pipeline/source && go run main.go"
         port: "8080"
-        tag: latest.7
+        tag: latest.8
         repository: tangjun1990/cng
 deploy:
  steps:
