@@ -49,7 +49,7 @@ deploy:
    - internal/docker-push:
        username: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
-       cmd: /bin/bash -c "cd /pipeline/source && supervisor — watch ./src src/main.go"
+       cmd: /bin/bash -c "cd /pipeline/source && ./src/main"
        port: "8080"
-       tag: latest.3
+       tag: latest.4
        repository: tangjun1990/cng
