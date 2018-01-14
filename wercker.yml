@@ -49,7 +49,7 @@ deploy:
    - internal/docker-push:
        username: $DOCKER_USERNAME
        password: $DOCKER_PASSWORD
-       #cmd: /pipeline/source/cng
+       cmd: /pipeline/source
        port: "8080"
        tag: latest.1
        repository: tangjun1990/cng
