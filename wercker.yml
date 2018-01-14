@@ -51,5 +51,5 @@ deploy:
        password: $DOCKER_PASSWORD
        cmd: /pipeline/source
        port: "8080"
-       tag: latest.1
+       tag: latest.2
        repository: tangjun1990/cng
