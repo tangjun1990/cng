@@ -4,11 +4,11 @@ import "fmt"
 import "net/http"
 
 func Hello(response http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(response, "hehheehhe...")
+	fmt.Fprintf(response, "hehheehhe...bbbbbbbbbbb")
 }
 
 func Xixi(response http.ResponseWriter, request *http.Request) {
-	fmt.Fprintf(response, "xixiixixix...")
+	fmt.Fprintf(response, "xixiixixix..nnnnnnnnnnnnn.")
 }
 
 func main() {
